@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+.pageContainer
+{
+   background-color: #f3f3f3;
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   margin-bottom:5%;
+}
+
+.flexChild
+{
+    flex:1;
+    margin:4%;
+}
+
+.sideText
+{
+    text-align: center;
+    max-width: 40%;
+}
+
+.title
+{
+    color:#242325;
+    font-family: 'Roboto', sans-serif;
+}
+
+.subTitle
+{
+    color:#545E75;
+    font-family: 'Roboto', sans-serif;
+}
+
+.signupForm
+{
+   border-radius:5%;
+   border: 15% rgb(156, 52, 52);
+
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   
+   filter: drop-shadow(5px 5px 10px #000);
+   max-width: 10%;
+   max-height: 30%;
+   padding:9%;
+   background-color: #ffffff;
+}
+
+.password, .user
+{
+    color : #231942;
+    min-width: 50%;
+    padding-bottom:5%;
+}
+
+.login, .signup
+{
+    background-color: #457b9d;
+    color:#f1faee;
+    min-width: 80%;
+    padding:3%;
+}
+
+.forgotPassword
+{
+    padding-top:15%;
+    
+}
+
+.link 
+{
+    padding-top:10%;
+}
+
+.line
+{
+    color:#fffffff6;
+    min-width:75%;
+}
+
+
+.userInput, .passwordInput
+{
+    width:1;
+    flex:1 1 auto;
+}
+
+@media (max-width: 768px)
+{
+    .pageContainer
+    {
+        flex-direction: column;
+    }
+    
+    .userInput, .passwordInput
+    {
+        width:80px;
+    }
+
+    .modal
+    {
+        max-width:30%;
+    }
+}
+
+/* Modal */
+.modal
+{
+    background-color: rgba(255,255,255,.5);
+
+    max-width:50%;
+    max-height: 50%;
+    display:flex;
+    margin:auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    filter: drop-shadow(2px 2px 5px #000);
+    border: 5% #000;
+    border-radius: 5%;
+} 
+
+.modalPopUp
+{
+    top:50%;
+    margin:auto;
+    background-color: white;
+    max-width: 400px;
+    text-align: center;
+    display:flex;
+    flex-direction: column;
+    filter: drop-shadow(2px 2px 5px #000);
+    transform: translate(0%, 50%);
+    padding-bottom: 4%;
+}
+
+/* .modalForm
+{
+    text-align: center;
+    align-items: center;
+    margin:auto;
+    max-width: 50%;
+    max-height: 50%;
+    background-color: rgba(255,255,255,.5);
+} */
+
+/* Pseudo Classes */
+
+.userInput:focus, .passwordInput:focus
+{
+    outline: none;
+    border-color: #545E75;
+    border-radius:8%;
+}

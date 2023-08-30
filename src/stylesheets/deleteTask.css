@@ -1,0 +1,13 @@
+.delForm
+{
+    position:absolute;
+    display:flex;
+    flex-direction: column;
+    min-width:30%;
+    min-height:20%;
+    top:30%;
+    left:36%;
+    background-color: #d8f2d0;
+    border:2px solid black;
+    filter: drop-shadow(5px 5px 10px #000);
+}
